@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/nrepl/incomplete/tree/master.svg?style=svg)](https://circleci.com/gh/nrepl/incomplete/tree/master)
+[![CircleCI](https://circleci.com/gh/nrepl/incomplete/tree/main.svg?style=svg)](https://circleci.com/gh/nrepl/incomplete/tree/main)
 [![Clojars Project](https://img.shields.io/clojars/v/org.nrepl/incomplete.svg)](https://clojars.org/org.nrepl/incomplete)
 [![cljdoc badge](https://cljdoc.org/badge/org.nrepl/incomplete)](https://cljdoc.org/d/org.nrepl/incomplete/CURRENT)
 [![downloads badge](https://versions.deps.co/org.nrepl/incomplete/downloads.svg)](https://clojars.org/org.nrepl/incomplete)
