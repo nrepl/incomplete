@@ -33,6 +33,11 @@ Here's a list of the `incomplete`'s advantages over `clojure-complete`:
 
 The long term goal for the project is to replace `clojure-complete` in REPLy and Leiningen.
 
+**Updates:**
+
+* REPLy 0.5 is out and it uses `incomplete` (released on 2021-08-18)
+* There's an [open PR](https://github.com/technomancy/leiningen/pull/2755) to update REPLy in Leiningen
+
 ## Usage
 
 You need only one function from incomplete's API - `completions`.
