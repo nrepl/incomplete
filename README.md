@@ -109,6 +109,18 @@ can also specify an explicit namespace.
 (completions "ma" 'clojure.core)
 ```
 
+You can also request additional metadata for the completion candidates:
+
+``` clojure
+(completions "map" *ns* {:extra-metadata #{:arglists :doc}})
+({:candidate "map", :type :function, :doc "Returns a lazy sequence consisting of the result of applying f to\n  the set of first items of each coll, followed by applying f to the\n  set of second items in each coll, until any one of the colls is\n  exhausted.  Any remaining items in other colls are ignored. Function\n  f should accept number-of-colls arguments. Returns a transducer when\n  no collection is provided.", :arglists "([f] [f coll] [f c1 c2] [f c1 c2 c3] [f c1 c2 c3 & colls])"}
+ {:candidate "map-indexed", :type :function, :doc "Returns a lazy sequence consisting of the result of applying f to 0\n  and the first item of coll, followed by applying f to 1 and the second\n  item in coll, etc, until coll is exhausted. Thus function f should\n  accept 2 arguments, index and item. Returns a stateful transducer when\n  no collection is provided.", :arglists "([f] [f coll])"}
+ {:candidate "map?", :type :function, :doc "Return true if x implements IPersistentMap", :arglists "([x])"} {:candidate "mapcat", :type :function, :doc "Returns the result of applying concat to the result of applying map\n  to f and colls.  Thus function f should return a collection. Returns\n  a transducer when no collections are provided", :arglists "([f] [f & colls])"}
+ {:candidate "mapv", :type :function, :doc "Returns a vector consisting of the result of applying f to the\n  set of first items of each coll, followed by applying f to the set\n  of second items in each coll, until any one of the colls is\n  exhausted.  Any remaining items in other colls are ignored. Function\n  f should accept number-of-colls arguments.", :arglists "([f coll] [f c1 c2] [f c1 c2 c3] [f c1 c2 c3 & colls])"})
+```
+
+That's quite useful if you're working with a tool (e.g. an editor) that can display additional data together with the completion candidates.
+
 ## License
 
 Copyright © 2021 Bozhidar Batsov
