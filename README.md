@@ -36,7 +36,7 @@ The long term goal for the project is to replace `clojure-complete` in REPLy and
 **Updates:**
 
 * REPLy 0.5 is out and it uses `incomplete` (released on 2021-08-18)
-* There's an [open PR](https://github.com/technomancy/leiningen/pull/2755) to update REPLy in Leiningen
+* Leiningen 2.9.7+ (released on 2021-09-15) uses REPLy 0.5 and `incomplete`
 
 ## Usage
 
@@ -128,7 +128,7 @@ That's quite useful if you're working with a tool (e.g. an editor) that can disp
 
 ## License
 
-Copyright © 2021 Bozhidar Batsov
+Copyright © 2021-2022 Bozhidar Batsov
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
